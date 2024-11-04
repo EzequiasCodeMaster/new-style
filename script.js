@@ -1,18 +1,19 @@
-// Função para alternar a exibição do menu
-function toggleMenu() {
-    const menu = document.getElementById('side-menu');
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'block';
-    }
-}
 
-// Fechar o menu quando clicar fora dele
-document.addEventListener('click', function(event) {
-    const menu = document.getElementById('side-menu');
-    const menuBtn = document.querySelector('.menu-btn');
-    if (menu.style.display === 'block' && !menu.contains(event.target) && event.target !== menuBtn) {
-        menu.style.display = 'none';
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+
+    document.querySelector('.next').addEventListener('click', () => {
+        changeSlide(1);
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        changeSlide(-1);
+    });
+
+    function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add('active');
     }
-});
+

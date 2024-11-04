@@ -27,8 +27,6 @@ body {
     padding: 0.5rem 1rem;
     background-color: var(--dark-gray);
     border-bottom: 3px solid #d4af37;
-    position: fixed;
-    width: 100dvw;
 }
 
 
@@ -74,7 +72,6 @@ header nav a {
     height: auto;
     color: var(--white);
     margin: 0px 0;
-    transform: translatey(80px);
 }
 
 .hero-image img {
@@ -134,18 +131,20 @@ header nav a {
 }
 
 #foto1 {
-    background: url(imagens/teste1.jpg);
+    background: url(imagens/teste1.png);
     background-size: cover;
 }
 
 #foto2 {
-    background: url(imagens/teste1.jpg);
+    background: url(imagens/teste2.jpg);
     background-size: cover;
+    background-position: center center;
 }
 
 #foto3 {
-    background: url(imagens/teste1.jpg);
+    background: url(imagens/teste3.png);
     background-size: cover;
+    background-position: center center;
 }
 
 
@@ -214,3 +213,154 @@ footer .social-media a {
     color: var(--gold);
     text-decoration: none;
 }
+
+
+
+/*----------------------SERVICOS--------------*/
+
+.headerservicos {
+    width: 100%;
+}
+
+.cabecaservico {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 30px;
+}
+
+.headerservicos img {
+    width: 50px;
+    margin: 0px 30px;
+}
+
+.bodyservicos {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2em;
+    box-shadow: 2px 2px 10px black;
+    
+}
+
+.cabelo {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 95%;
+    height: 650px;
+    background: #2a2927 url(imagens/cabelo.png) center center  no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #1e1b18;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.barba {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 95%;
+    height: 650px;
+    background: #2a2927 url(imagens/barba.png) center center  no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #1e1b18;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.sombrancelha {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 95%;
+    height: 650px;
+    background: #2a2927 url(imagens/sombrancelha.png) center center  no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #1e1b18;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.pigmentacao {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 95%;
+    height: 650px;
+    background: #2a2927 url(imagens/barba.png)    no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #1e1b18;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+/*-------------RELATOS-DOS-CLIENTES-----------*/
+
+/* Estilos do carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.carousel h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+/* Imagem de fundo */
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Texto sobre a imagem */
+.carousel-slide h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Botões de navegação */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+

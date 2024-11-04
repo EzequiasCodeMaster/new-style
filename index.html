@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="stilo">
             <div class="icon-container">
                 <span class="icon">⚙️</span>
@@ -20,8 +20,8 @@
             </div>
         </div>
         <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Serviços</a>
+        <a href="#inicio">Home</a>
+        <a href="#headerservicos">Serviços</a>
         <a href="#gallery">Galeria</a>
         <a href="#contact">Contato</a>
          </nav>
@@ -29,7 +29,7 @@
 
     <section class="hero">
         <div class="hero-image">
-            <img src="imagens/barbeiro.jpg" alt="Foto de Barbeiro">
+            <img src="imagens/barbeiro.png" alt="Foto de Barbeiro">
         </div>
         <div class="dias">
             <h2>CORTES</h2>
@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <section class="servicos">
+    <section class="servicos" id="servicos">
         <div class="servicos-card" id="foto1">
             <h3>HOME</h3>
         </div>
@@ -52,189 +52,74 @@
         </div>
     </section>
 
-    <footer class="footerfixo">
-        <div class="footer-buttonpai">
-            <button class="footer-button">HOME</button>
-            <button class="footer-button">GALLERY</button>
-        </div>
-        <h3>Desenvolvido por <strong><a href="#">ezequiascodemaster</a></strong></h3>
-    </footer>
+    <!-------------------SERVIÇOS------------------------>
 
+    <div class="headerservicos" id="headerservicos">
+
+        <div class="cabecaservico">
+            <img src="imagens/icone.png" alt="">
+            <h1>SERVIÇOS</h1>
+        </div>
+
+        <div class="bodyservicos">
+            <h2>Cabelo</h2>
+            <div class="cabelo"></div>
+        </div>
+
+        <div class="bodyservicos">
+            <h2>Barba</h2>
+            <div class="barba"></div>
+        </div>
+
+        <div class="bodyservicos">
+            <h2>Sombrancelha</h2>
+            <div class="sombrancelha"></div>
+        </div>
+    </div>
+
+   
+        <div class="carousel">
+
+            <h1>RELATOS DOS CLIENTES</h1>
+
+            <div class="carousel-slide active">
+                <img src="imagens/t1.jpg" alt="Imagem 1">
+                <h2>Exelente profissional, estou muito contente com o corte</h2>
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/t2.jpg" alt="Imagem 2">
+                <h2>Sem palavras , o melhor atendimento da cidade e ainda o melhor barbeiro</h2>
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/t3.jpg" alt="Imagem 3">
+                <h2>Recomendo muito , o Cara nunca erra o corte parece ate uma maquina de cortar</h2>
+            </div>
+            <!-- Botões de navegação -->
+            <button class="prev">Anterior</button>
+            <button class="next">Próxima</button>
+     
+        
+    </section>
+
+
+
+    
     <section id="contact">
         <h2>Contato</h2>
         <p>Endereço: Rua Exemplo, 123</p>
         <p>Telefone: (11) 1234-5678</p>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
+    
+    
+    <footer class="footerfixo">
+        <div class="footer-buttonpai">
+            <a href="#inicio" class="footer-button">HOME</a>
+            <button class="footer-button">GALLERY</button>
         </div>
+        <h3>Desenvolvido por <strong><a href="#">ezequiascodemaster</a></strong></h3>
     </footer>
 
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
-
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
-
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
-
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
-
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
-
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
-
-    <footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer><footer>
-        <p>&copy; 2024 Barbearia. Todos os direitos reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </body>
 </html>

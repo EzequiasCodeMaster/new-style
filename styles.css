@@ -151,6 +151,7 @@ header nav a {
     text-align: center;
     width: 100dvw;
     position: fixed;
+    top: 88%;
     background-color: var(--dark-gray);
     padding: 0.8rem 0;
 }

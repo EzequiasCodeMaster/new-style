@@ -150,10 +150,14 @@ header nav a {
     flex-flow: column;
     text-align: center;
     width: 100dvw;
-    position: fixed;
-    top: 100%;
     background-color: var(--dark-gray);
     padding: 0.8rem 0;
+
+    position: fixed; /* Fixa a div */
+    bottom: 0; /* Coloca a div na parte inferior da tela */
+    left: 0; /* Alinha a div à esquerda */
+    right: 0; /* Estende a div até a direita */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .footer-buttonpai {

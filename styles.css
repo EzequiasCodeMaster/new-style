@@ -1,0 +1,211 @@
+:root {
+    --background-color: #1e1b18;
+    --gold: #d4af37;
+    --dark-gray: #2a2927;
+    --light-gray: #c4c4c4;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--white);
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--dark-gray);
+    border-bottom: 3px solid #d4af37;
+}
+
+.stilo {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+}
+
+header nav a {
+    margin-left: 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+.icon-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: var(--light-gray);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100dvw;
+    color: var(--white);
+    margin: 0px 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.dias {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.hero-overlay h2 {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: var(--light-gray);
+}
+
+/* Services Section */
+.servicos {
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    padding: 5px;
+}
+
+.servicos-card {
+    text-align: center;
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    height: 180px;
+    margin: 5px;}
+
+.servicos-card img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.servicos-card h3 {
+    color: var(--gold);
+    font-size: 1rem;
+}
+
+#foto1 {
+    background: url(imagens/teste1.jpg);
+    background-size: cover;
+}
+
+#foto2 {
+    background: url(imagens/teste1.jpg);
+    background-size: cover;
+}
+
+#foto3 {
+    background: url(imagens/teste1.jpg);
+    background-size: cover;
+}
+
+
+
+/* Footer */
+.footerfixo {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    position: fixed;
+    width: 100dvw;
+    background-color: var(--dark-gray);
+    padding: 0.8rem 0;
+}
+
+.footer-buttonpai {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    
+}
+
+.footer-button {
+    background-color: var(--gold);
+    color: var(--background-color);
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+footer h3 {
+    margin-top: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #d4ac26;
+}
+
+
+
+#contact {
+    padding: 2rem;
+    background-color: var(--dark-gray);
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#contact button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--gold);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    color: var(--gold);
+    text-decoration: none;
+}

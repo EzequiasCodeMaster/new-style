@@ -27,7 +27,10 @@ body {
     padding: 0.5rem 1rem;
     background-color: var(--dark-gray);
     border-bottom: 3px solid #d4af37;
+    position: fixed;
+    width: 100dvw;
 }
+
 
 .stilo {
     display: flex;
@@ -36,6 +39,8 @@ body {
     align-items: center;
     padding: .5em;
 }
+
+
 
 header nav a {
     margin-left: 1rem;
@@ -69,6 +74,7 @@ header nav a {
     height: auto;
     color: var(--white);
     margin: 0px 0;
+    transform: translatey(80px);
 }
 
 .hero-image img {
@@ -151,14 +157,7 @@ header nav a {
     text-align: center;
     width: 100dvw;
     background-color: var(--dark-gray);
-    padding: 0.8rem 0;
-
-    position: fixed; /* Fixa a div */
-    bottom: 0; /* Coloca a div na parte inferior da tela */
-    left: 0; /* Alinha a div à esquerda */
-    right: 0; /* Estende a div até a direita */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-}
+    padding: 0.8rem 0;}
 
 .footer-buttonpai {
     display: flex;

@@ -66,6 +66,7 @@ header nav a {
     align-items: center;
     text-align: center;
     width: 100dvw;
+    height: auto;
     color: var(--white);
     margin: 0px 0;
 }
@@ -148,7 +149,6 @@ header nav a {
     display: flex;
     flex-flow: column;
     text-align: center;
-    position: fixed;
     width: 100dvw;
     background-color: var(--dark-gray);
     padding: 0.8rem 0;

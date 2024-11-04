@@ -17,3 +17,9 @@
         slides[currentSlide].classList.add('active');
     }
 
+     // JavaScript para ocultar a tela de carregamento quando a página carregar
+     window.addEventListener("load", function() {
+        const loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.display = "none";
+    });
+
